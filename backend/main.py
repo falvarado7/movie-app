@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from api.routers import movies, theaters, reviews
 
 app = FastAPI()
 
@@ -13,26 +13,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# In-memory movies list
-MOVIES = [
-    {"id": 1, "title": "The Matrix"},
-    {"id": 2, "title": "Inception"},
-]
-
-class MovieIn(BaseModel):
-    title: str
+app.include_router(movies.router)
+app.include_router(theaters.router)
+app.include_router(reviews.router)
 
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
-
-@app.get("/api/movies")
-def list_movies():
-    return MOVIES
-
-@app.post("/api/movies")
-def create_movie(movie: MovieIn):
-    new_id = (MOVIES[-1]["id"] + 1) if MOVIES else 1
-    obj = {"id": new_id, "title": movie.title}
-    MOVIES.append(obj)
-    return obj
