@@ -37,7 +37,7 @@ MOVIES_SEED = [
         "description":
             "The year is 1936. An archeology professor named Indiana Jones is venturing in the jungles of South America searching for a golden statue. Unfortunately, he sets off a deadly trap but miraculously escapes. Then, Jones hears from a museum curator named Marcus Brody about a biblical artifact called The Ark of the Covenant, which can hold the key to humanly existence. Jones has to venture to vast places such as Nepal and Egypt to find this artifact...",
         "image_url":
-            "https://m.media-amazon.com/images/M/MV5BMjA0ODEzMTc1Nl5BMl5BanBnXkFtZTcwODM2MjAxNA@@._V1_Ratio0.6716_AL_.jpg",
+            "https://image.tmdb.org/t/p/original/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
     },
     {
         "movie_id": 5,
@@ -107,7 +107,7 @@ MOVIES_SEED = [
         "description":
             "In London, wealthy Margot Mary Wendice had a brief love affair with the American writer Mark Halliday while her husband and professional tennis player Tony Wendice was on a tennis tour. Tony quits playing to dedicate to his wife and finds a regular job. She decides to give him a second chance for their marriage. When Mark arrives from America to visit the couple, Margot tells him that she had destroyed all his letters but one that was stolen...",
         "image_url":
-            "https://m.media-amazon.com/images/M/MV5BOWIwODIxYWItZDI4MS00YzhhLWE3MmYtMzlhZDIwOTMzZmE5L2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_Ratio0.6791_AL_.jpg",
+            "https://image.tmdb.org/t/p/original/4KKiFDvtEusJzqzlwHp7iMceXKS.jpg",
     },
     {
         "movie_id": 12,
@@ -147,7 +147,7 @@ MOVIES_SEED = [
         "description":
             "On the occasion of his fifth wedding anniversary, Nick Dunne reports that his wife, Amy, has gone missing. Under pressure from the police and a growing media frenzy, Nick's portrait of a blissful union begins to crumble...",
         "image_url":
-            "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_Ratio0.6791_AL_.jpg",
+            "https://image.tmdb.org/t/p/original/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
     },
     {
         "movie_id": 16,
@@ -158,5 +158,145 @@ MOVIES_SEED = [
             "In 2029 the mutant population has shrunken significantly due to genetically modified plants designed to reduce mutant powers and the X-Men have disbanded. Logan, whose power to self-heal is dwindling, has surrendered himself to alcohol and now earns a living as a chauffeur. He takes care of the ailing old Professor X whom he keeps hidden away. One day, a female stranger asks Logan to drive a girl named Laura to the Canadian border...",
         "image_url":
             "https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_Ratio0.6791_AL_.jpg",
+    },
+    {
+        "movie_id": 17,
+        "title": "The Dark Knight",
+        "runtime_in_minutes": 152,
+        "rating": "PG-13",
+        "description":
+            "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    },
+    {
+        "movie_id": 18,
+        "title": "The Green Mile",
+        "runtime_in_minutes": 189,
+        "rating": "R",
+        "description":
+            "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+    },
+    {
+        "movie_id": 19,
+        "title": "Pulp Fiction",
+        "runtime_in_minutes": 154,
+        "rating": "R",
+        "description":
+            "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    },
+    {
+        "movie_id": 20,
+        "title": "The Matrix",
+        "runtime_in_minutes": 136,
+        "rating": "R",
+        "description":
+            "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+    },
+    {
+        "movie_id": 21,
+        "title": "The Shawshank Redemption",
+        "runtime_in_minutes": 144,
+        "rating": "R",
+        "description":
+            "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    },
+    {
+        "movie_id": 22,
+        "title": "The Help",
+        "runtime_in_minutes": 146,
+        "rating": "PG-13",
+        "description":
+            "Aibileen Clark is a middle-aged African-American maid who has spent her life raising white children and has recently lost her only son; Minny Jackson is an African-American maid who has often offended her employers despite her family's struggles with money and her desperate need for jobs; and Eugenia 'Skeeter' Phelan is a young white woman who has recently moved back home after graduating college to find out her childhood maid has mysteriously disappeared. These three stories intertwine to explain how life in Jackson, Mississippi revolves around 'the help'; yet they are always kept at a certain distance because of racial lines.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/3kmfoWWEc9Vtyuaf9v5VipRgdjx.jpg",
+    },
+    {
+        "movie_id": 23,
+        "title": "Forrest Gump",
+        "runtime_in_minutes": 142,
+        "rating": "PG-13",
+        "description":
+            "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+    },
+    {
+        "movie_id": 24,
+        "title": "The Shining",
+        "runtime_in_minutes": 144,
+        "rating": "R",
+        "description":
+            "Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prepared for the madness that lurks within.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/xazWoLealQwEgqZ89MLZklLZD3k.jpg",
+    },
+    {
+        "movie_id": 25,
+        "title": "The Truman Show",
+        "runtime_in_minutes": 103,
+        "rating": "PG",
+        "description":
+            "An insurance salesman begins to suspect that his whole life is actually some sort of reality TV show.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
+    },
+    {
+        "movie_id": 26,
+        "title": "Terminator 2: Judgment Day",
+        "runtime_in_minutes": 137,
+        "rating": "R",
+        "description":
+            "Ten years after the events of the original, a reprogrammed T-800 is sent back in time to protect young John Connor from the shape-shifting T-1000. Together with his mother Sarah, he fights to stop Skynet from triggering a nuclear apocalypse.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/weVXMD5QBGeQil4HEATZqAkXeEc.jpg",
+    },
+    {
+        "movie_id": 27,
+        "title": "Fight Club",
+        "runtime_in_minutes": 139,
+        "rating": "R",
+        "description":
+            "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground 'fight clubs' forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
+    },
+    {
+        "movie_id": 28,
+        "title": "The Lion King",
+        "runtime_in_minutes": 99,
+        "rating": "G",
+        "description":
+            "Young lion prince Simba, eager to one day become king of the Pride Lands, grows up under the watchful eye of his father Mufasa; all the while his villainous uncle Scar conspires to take the throne for himself. Amid betrayal and tragedy, Simba must confront his past and find his rightful place in the Circle of Life.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+    },
+    {
+        "movie_id": 29,
+        "title": "Avengers: Infinity War",
+        "runtime_in_minutes": 139,
+        "rating": "PG-13",
+        "description":
+            "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    },
+    {
+        "movie_id": 30,
+        "title": "Back to the Future",
+        "runtime_in_minutes": 116,
+        "rating": "PG",
+        "description":
+            "Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to 1985.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
     },
 ]
