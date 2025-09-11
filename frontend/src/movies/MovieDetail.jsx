@@ -26,10 +26,10 @@ export default function MovieDetail() {
     if (!movie) return <div className="card p-6 animate-pulse h-64" />;
 
     return (
-        <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+        <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] items-start">
             <div className="card overflow-hidden">
-                <div className="relative aspect-[2/3] bg-zinc-200/80 dark:bg-zinc-800/60">
-                    <img alt="" src={movie.image_url} className="absolute inset-0 h-full w-full object-cover" />
+                <div className="aspect-[2/3] bg-zinc-200/80 dark:bg-zinc-800/60">
+                    <img alt="" src={movie.image_url} className="h-full w-full object-cover rounded" />
                 </div>
             </div>
 
@@ -41,8 +41,9 @@ export default function MovieDetail() {
                     </p>
                     {movie.description && <p className="mt-4 text-sm leading-6">{movie.description}</p>}
                 </div>
-
                 <TheatersSection movieId={id} />
+            </div>
+            <div className="md:col-span-2">
                 <ReviewsSection movieId={id} />
             </div>
         </div>

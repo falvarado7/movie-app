@@ -49,7 +49,7 @@ export default function MoviesIndex() {
                     {movies.map(m => (
                         <li key={m.movie_id ?? m.id} className="card p-4 flex gap-4">
                             <div className="shrink-0">
-                                <div className="h-32 w-24 overflow-hidden rounded bg-zinc-200/80 dark:bg-zinc-800/60">
+                                <div className="h-32 w-24 overflow-hidden rounded bg-zinc-400 dark:bg-zinc-800">
                                     <img src={m.image_url} alt="" className="h-full w-full object-cover" />
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ export default function MoviesIndex() {
                                         to={`/movies/${m.movie_id ?? m.id}`}
                                         className="
                                             ring-focus inline-flex items-center gap-1 rounded-xl
-                                            border border-zinc-200/70 dark:border-zinc-800/70
+                                            border border-zinc-400 dark:border-zinc-800
                                             px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900"
                                     >
                                         See more →

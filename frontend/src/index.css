@@ -17,11 +17,14 @@ body {
 
 /* Subtle card & ring helpers */
 .card {
-  @apply rounded-2xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/70 dark:bg-zinc-900/60 shadow-sm backdrop-blur;
+  @apply rounded-2xl border border-zinc-400 dark:border-zinc-800
+        bg-zinc-200 dark:bg-zinc-900/60 shadow-sm backdrop-blur;
 }
 .card-hover {
   @apply transition-transform hover:-translate-y-0.5 hover:shadow-lg;
 }
 .ring-focus {
-  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-zinc-950 rounded-lg;
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60
+        focus-visible:ring-offset-2 focus-visible:ring-offset-white
+        dark:focus-visible:ring-offset-zinc-950 rounded-lg;
 }

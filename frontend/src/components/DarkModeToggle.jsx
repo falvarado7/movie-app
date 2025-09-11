@@ -22,7 +22,7 @@ export default function DarkModeToggle() {
         <button
             className="
                 ring-focus inline-flex items-center gap-2 rounded-xl border
-                border-zinc-200/70 dark:border-zinc-800/70 px-3 py-2
+                border-zinc-400 dark:border-zinc-800 px-3 py-2
                 text-sm text-zinc-900 dark:text-zinc-100"
             onClick={() => setDark(d => !d)}
             aria-label="Toggle dark mode"

@@ -7,7 +7,7 @@ import { Trash2 } from 'lucide-react';
 function ReviewCard({ review, onDelete }) {
     const critic = review.critic || {};
     return (
-        <article className="rounded-2xl border border-zinc-200/70 dark:border-zinc-800/70 p-4">
+        <article className="rounded-2xl border border-zinc-400 dark:border-zinc-800 p-4">
             <div className="flex items-start justify-between gap-3">
                 <div>
                     <p className="font-medium">
