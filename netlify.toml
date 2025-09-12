@@ -1,0 +1,20 @@
+# netlify.toml (at repo root)
+
+[build]
+  base    = "frontend"
+  command = "npm run build"
+  publish = "frontend/dist"
+
+# Single Page App fallback
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
+
+# (Optional but convenient) Proxy API calls to your Fly backend
+# If you’ve already set VITE_API_URL in env, you can omit this.
+[[redirects]]
+  from = "/api/*"
+  to   = "https://welovemovies-api-francisco.fly.dev/api/:splat"
+  status = 200
+  force = true
