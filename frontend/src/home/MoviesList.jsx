@@ -1,17 +1,21 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState, useDeferredValue } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { listMovies } from '../lib/api';
 import MovieCard, { MovieCardSkeleton } from '../components/MovieCard';
 
 export default function MoviesList() {
     const [movies, setMovies] = useState(null);
     const [error, setError] = useState(null);
+    const [params] = useSearchParams();
+    const q = (params.get('q') || '').trim();
+    const dq = useDeferredValue(q);
 
     useEffect(() => {
         const ac = new AbortController();
         (async () => {
             try {
-                const data = await listMovies(ac.signal);
-                if (!ac.signal.aborted) setMovies(data);
+                const list = await listMovies(ac.signal);
+                if (!ac.signal.aborted) setMovies(list);
             } catch (e) {
                 if (!ac.signal.aborted) setError(e);
             }
@@ -19,16 +23,17 @@ export default function MoviesList() {
         return () => ac.abort();
     }, []);
 
-    if (error) {
-        return (
-            <div className="mx-auto max-w-lg">
-                <div className="card p-4">
-                    <p className="text-red-600">Failed to load: {String(error.message || error)}</p>
-                </div>
-            </div>
-        );
-    }
+    const filtered = useMemo(() => {
+        if (!movies) return null;
+        if (!dq) return movies;
+        const tokens = dq.toLowerCase().split(/\s+/).filter(Boolean);
+        return movies.filter(m => {
+        const title = (m.title || '').toLowerCase();
+        return tokens.every(t => title.includes(t));
+        });
+    }, [movies, dq]);
 
+    if (error) return <p className="text-red-600">Failed: {String(error.message || error)}</p>;
     if (!movies) {
         return (
             <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -38,16 +43,21 @@ export default function MoviesList() {
     }
 
     return (
-        <>
-            <div className="mb-4 flex items-end justify-between">
-                <div>
-                    <h2 className="text-2xl font-semibold tracking-tight">Now Showing</h2>
-                </div>
+        <main>
+            <div className="mb-4 flex justify-between">
+                <h2 className="text-2xl font-semibold tracking-tight">Now Showing</h2>
+                {q && <p className="text-xs text-zinc-500">Search: “{q}” · {filtered.length} / {movies?.length ?? 0}</p>}
             </div>
 
-            <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                {movies.map(m => <MovieCard key={m.id ?? m.movie_id} movie={m} />)}
-            </section>
-        </>
+            {filtered.length === 0 ? (
+                <div className="card p-6 text-sm text-zinc-600 dark:text-zinc-300">
+                    No movies match <strong>“{q}”</strong>. Try fewer keywords or different terms.
+                </div>
+            ) : (
+                <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {filtered.map((movie) => ( <MovieCard key={movie.id ?? movie.movie_id} movie={movie}/>))}
+                </section>
+            )}
+        </main>
     );
 }
