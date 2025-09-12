@@ -299,4 +299,104 @@ MOVIES_SEED = [
         "image_url":
             "https://image.tmdb.org/t/p/original/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
     },
+    {
+        "movie_id": 31,
+        "title": "GoodFellas",
+        "runtime_in_minutes": 145,
+        "rating": "R",
+        "description":
+            "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+    },
+    {
+        "movie_id": 32,
+        "title": "The Loard of the Rings: The Fellowship of the Ring",
+        "runtime_in_minutes": 179,
+        "rating": "PG-13",
+        "description":
+            "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+    },
+    {
+        "movie_id": 33,
+        "title": "The Silence of the Lambs",
+        "runtime_in_minutes": 119,
+        "rating": "R",
+        "description":
+            "Clarice Starling is a top student at the FBI's training academy. Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism. Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+    },
+    {
+        "movie_id": 34,
+        "title": "Star Wars",
+        "runtime_in_minutes": 121,
+        "rating": "PG",
+        "description":
+            "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+    },
+    {
+        "movie_id": 35,
+        "title": "The Social Network",
+        "runtime_in_minutes": 121,
+        "rating": "PG-13",
+        "description":
+            "In 2003, Harvard undergrad and computer programmer Mark Zuckerberg begins work on a new concept that eventually turns into the global social network known as Facebook. Six years later, Mark is one of the youngest billionaires ever, but his unprecedented success leads to both personal and legal complications when he ends up on the receiving end of two lawsuits, one involving his former friend.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+    },
+    {
+        "movie_id": 36,
+        "title": "Tetris",
+        "runtime_in_minutes": 118,
+        "rating": "R",
+        "description":
+            "In 1988, American video game salesman Henk Rogers discovers the video game Tetris. When he sets out to bring the game to the world, he enters a dangerous web of lies and corruption behind the Iron Curtain.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg",
+    },
+    {
+        "movie_id": 37,
+        "title": "Jobs",
+        "runtime_in_minutes": 129,
+        "rating": "PG-13",
+        "description":
+            "The story of Steve Jobs' ascension from college dropout into one of the most revered creative entrepreneurs of the 20th century.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/mOyZ0UAWaOJartFq2G3Cv0soFtQ.jpg",
+    },
+    {
+        "movie_id": 38,
+        "title": "The Conjuring",
+        "runtime_in_minutes": 112,
+        "rating": "R",
+        "description":
+            "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse. Forced to confront a powerful entity, the Warrens find themselves caught in the most terrifying case of their lives.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
+    },
+    {
+        "movie_id": 39,
+        "title": "Sinners",
+        "runtime_in_minutes": 138,
+        "rating": "R",
+        "description":
+            "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/705nQHqe4JGdEisrQmVYmXyjs1U.jpg",
+    },
+    {
+        "movie_id": 40,
+        "title": "Se7en",
+        "runtime_in_minutes": 127,
+        "rating": "R",
+        "description":
+            "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the 'seven deadly sins' in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Somerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+        "image_url":
+            "https://image.tmdb.org/t/p/original/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+    },
 ]
