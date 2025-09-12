@@ -19,7 +19,7 @@ popd >/dev/null
 
 # 2) Deploy the prebuilt dist to Netlify
 echo "Deploying to Netlify…"
-netlify deploy \
+npx -y netlify-cli deploy \
   --site "$SITE_ID" \
   --dir "frontend/dist" \
   --prod \
