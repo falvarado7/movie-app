@@ -1,12 +1,10 @@
 from fastapi import APIRouter, Depends
 from typing import List, Dict, Any
+from api.deps import get_theaters_service, get_movies_service
 from services.theaters_service import TheatersService
 from services.movies_service import MoviesService
 
 router = APIRouter(prefix="/api/theaters", tags=["theaters"])
-
-def get_theaters_service(): return TheatersService()
-def get_movies_service(): return MoviesService()
 
 @router.get("", response_model=List[Dict[str, Any]])
 def list_theaters(

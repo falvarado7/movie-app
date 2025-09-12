@@ -1,14 +1,11 @@
 from fastapi import APIRouter, HTTPException, Depends
 from typing import List, Optional, Dict, Any
+from api.deps import get_movies_service, get_theaters_service, get_reviews_service
 from services.movies_service import MoviesService
 from services.theaters_service import TheatersService
 from services.reviews_service import ReviewsService
 
 router = APIRouter(prefix="/api/movies", tags=["movies"])
-
-def get_movies_service(): return MoviesService()
-def get_theaters_service(): return TheatersService()
-def get_reviews_service(): return ReviewsService()
 
 @router.get("", response_model=List[Dict[str, Any]])
 def list_movies(is_showing: Optional[bool] = None,
