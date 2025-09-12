@@ -20,8 +20,15 @@ function App() {
                 <Route path="/theaters/:id" element={<TheaterDetail />} />
             </Routes>
         </main>
-        <footer className="border-t border-zinc-200/70 dark:border-zinc-800/70 py-6 text-center text-sm text-zinc-500">
-            We Love Movies
+        <footer className="
+                    border-t border-zinc-400 dark:border-zinc-800
+                    bg-zinc-200/60 dark:bg-zinc-900/60
+                    py-6 text-center text-sm text-zinc-500">
+            <p>We Love Movies</p>
+            <br></br>
+            <p>Built and designed by Francisco Alvarado</p>
+            <br></br>
+            <p>All rights reserved ©</p>
         </footer>
     </div>
   );
