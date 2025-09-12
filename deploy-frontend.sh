@@ -1,19 +1,26 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# REQUIREMENTS:
-# - Netlify CLI installed:  npm i -g netlify-cli
-# - NETLIFY_AUTH_TOKEN exported once in your shell
-# - Replace SITE_ID with your actual site id (from `netlify sites:list`)
+# Netlify site ID for welovemovies-frontend (change if yours differs)
+SITE_ID="facc602e-593a-4815-8839-763015eac0e6"
 
-SITE_ID="facc602e-593a-4815-8839-763015eac0e6"  # welovemovies-frontend
+# 1) Build inside frontend so local vite is used
+pushd frontend >/dev/null
 
-# Build the frontend (workspace-aware)
-npm run -w frontend build
+# If deps aren’t installed (or you nuked node_modules), install them
+if [ ! -d node_modules ]; then
+  echo "Installing frontend deps..."
+  npm ci --no-audit --no-fund
+fi
 
-# Deploy the already-built static files
+# Build (uses frontend/package.json scripts and local vite)
+npm run build
+popd >/dev/null
+
+# 2) Deploy the prebuilt dist to Netlify
+echo "Deploying to Netlify…"
 netlify deploy \
-  --dir=frontend/dist \
-  --site="$SITE_ID" \
+  --site "$SITE_ID" \
+  --dir "frontend/dist" \
   --prod \
   --message "manual deploy $(date '+%Y-%m-%d %H:%M:%S')"

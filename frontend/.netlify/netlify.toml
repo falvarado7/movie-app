@@ -7,14 +7,18 @@ headers = []
 [functions."*"]
 
 [build]
-command = "npm ci --no-audit --no-fund && npm run -w frontend build"
-publish = "frontend/dist"
+publish = "/Users/frankie/React-Python/movie-app/dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+base = "/Users/frankie/React-Python/movie-app/frontend"
 
 [build.environment]
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 VITE_API_URL = "https://welovemovies-api-francisco.fly.dev/api"
 ROLLUP_DISABLE_NATIVE = "1"
 ROLLUP_SKIP_NODEJS_NATIVE = "1"
+NPM_FLAGS = "--no-audit --no-fund"
 
 [build.processing]
 
@@ -29,9 +33,10 @@ ROLLUP_SKIP_NODEJS_NATIVE = "1"
 [build.services]
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200.0
+force = false
 
 [redirects.query]
 
