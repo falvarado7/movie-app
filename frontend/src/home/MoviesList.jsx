@@ -45,7 +45,7 @@ export default function MoviesList() {
     return (
         <main>
             <div className="mb-4 flex justify-between">
-                <h2 className="text-2xl font-semibold">Now Showing</h2>
+                <h2 className="text-2xl font-semibold text-red-500">Now Showing</h2>
                 {q && <p className="text-xs text-zinc-500">Search: “{q}” · {filtered.length} / {movies?.length ?? 0}</p>}
             </div>
 
