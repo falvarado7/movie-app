@@ -13,6 +13,7 @@ html, body, #root {
 
 body {
   @apply bg-zinc-300 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 font-sans;
+  overflow-y: scroll;
 }
 
 /* Subtle card & ring helpers */

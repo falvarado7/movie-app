@@ -104,7 +104,7 @@ function ReviewCard({ review, onDelete, onUpdate }) {
                 <div className="mt-3">
                     <textarea
                         className="ring-focus w-full rounded-xl border border-zinc-400 dark:border-zinc-800 bg-transparent p-3 text-sm"
-                        rows={4}
+                        rows={20}
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                         placeholder="Update your review…"
