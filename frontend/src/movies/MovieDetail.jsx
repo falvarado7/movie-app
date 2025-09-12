@@ -28,7 +28,7 @@ export default function MovieDetail() {
     return (
         <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] items-start">
             <div className="card overflow-hidden">
-                <div className="aspect-[2/3] bg-zinc-200/80 dark:bg-zinc-800/60">
+                <div className="aspect-[2/3] bg-zinc-200/80 dark:bg-red-800">
                     <img alt="" src={movie.image_url} className="h-full w-full object-cover rounded" />
                 </div>
             </div>

@@ -110,5 +110,8 @@ export async function deleteReview(reviewId) {
     return fetchJson(`/reviews/${reviewId}`, { method: "DELETE" }, {});
 }
 export async function updateReview(reviewId, data) {
-    return fetchJson(`/reviews/${reviewId}`, { method: "PUT", body: JSON.stringify({ data }) }, {});
+    return fetchJson(`/reviews/${reviewId}`, {
+        method: "PUT",
+        body: JSON.stringify({ data })
+    }, {});
 }

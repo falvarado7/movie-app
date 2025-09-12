@@ -39,7 +39,7 @@ export default function TheaterDetail() {
                         ) : (
                         <ul className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                             {theater.movies.map(m => (
-                                <li key={m.movie_id} className="rounded-xl border border-zinc-400 dark:border-zinc-800 overflow-hidden">
+                                <li key={m.movie_id} className="card-hover rounded-xl border border-zinc-400 dark:border-zinc-800 overflow-hidden">
                                     <Link to={`/movies/${m.movie_id}`} className="block">
                                         <div className="aspect-[3/4] bg-zinc-400 dark:bg-zinc-800">
                                             <img src={m.image_url} alt="" className="h-full w-full object-cover" />

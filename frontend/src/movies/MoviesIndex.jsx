@@ -69,7 +69,7 @@ export default function MoviesIndex() {
                                         className="
                                             ring-focus inline-flex items-center gap-1 rounded-xl
                                             border border-zinc-400 dark:border-zinc-800
-                                            px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900"
+                                            px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800/60"
                                     >
                                         See more →
                                     </Link>

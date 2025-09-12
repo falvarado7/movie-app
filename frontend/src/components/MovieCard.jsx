@@ -4,7 +4,7 @@ export default function MovieCard({ movie }) {
     return (
         <article className="card card-hover overflow-hidden">
             <Link to={`/movies/${movie.id ?? movie.movie_id}`} className="block">
-                <div className="relative aspect-[2/3] bg-zinc-200/80 dark:bg-zinc-800/60">
+                <div className="relative aspect-[2/3]">
                     <img
                         src={movie.image_url}
                         alt={`${movie.title} poster`}
@@ -26,10 +26,10 @@ export default function MovieCard({ movie }) {
 export function MovieCardSkeleton() {
     return (
         <div className="card overflow-hidden animate-pulse">
-            <div className="aspect-[2/3] bg-zinc-200/60 dark:bg-zinc-800/60" />
+            <div className="aspect-[2/3]" />
             <div className="p-3 space-y-2">
-                <div className="h-4 w-3/4 bg-zinc-200/60 dark:bg-zinc-800/60 rounded" />
-                <div className="h-3 w-1/3 bg-zinc-200/60 dark:bg-zinc-800/60 rounded" />
+                <div className="h-4 w-3/4 rounded" />
+                <div className="h-3 w-1/3 rounded" />
             </div>
         </div>
     );

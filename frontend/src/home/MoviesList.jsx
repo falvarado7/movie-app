@@ -42,7 +42,6 @@ export default function MoviesList() {
             <div className="mb-4 flex items-end justify-between">
                 <div>
                     <h2 className="text-2xl font-semibold tracking-tight">Now Showing</h2>
-                    <p className="text-sm text-zinc-500">Fresh picks powered by your FastAPI backend</p>
                 </div>
             </div>
 
