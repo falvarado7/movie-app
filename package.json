@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "concurrently -n API,WEB -c green,cyan \"bash -lc 'cd backend && . .venv/bin/activate && uvicorn main:app --reload --port 8000'\" \"npm --workspace frontend run dev\"",
     "build": "npm --workspace frontend run build",
-    "preview": "npm --workspace frontend run preview"
+    "preview": "npm --workspace frontend run preview",
+    "deploy:frontend": "./deploy-frontend.sh"
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
