@@ -3,6 +3,8 @@
 A modernized full-stack movie app rebuilt from the original Express.js + PostgreSQL project.
 This version uses **FastAPI (Python)** for the backend and **React + Vite + TailwindCSS** for the frontend.
 
+![Dashboard Screenshot](./frontend/public/screenshots/dashboard-light.png)
+
 ---
 
 ## ✨ Features
@@ -26,6 +28,40 @@ This version uses **FastAPI (Python)** for the backend and **React + Vite + Tail
 - Uvicorn
 - Pydantic models
 - In-memory seed services (replaceable with DB later)
+
+---
+
+## Project Structure
+
+```
+movie-app/
+  ├── backend/
+  │   ├── api/routers/      # FastAPI routers
+  │   ├── services/         # Business logic
+  │   ├── seeds/            # Seed data (movies, theaters, reviews)
+  │   └── main.py           # FastAPI entrypoint
+  ├── frontend/
+  │   ├── src/components/   # UI components
+  │   ├── src/home/         # Home + movie pages
+  │   ├── src/lib/          # API client
+  │   └── App.jsx
+  ├── package.json
+  └── README.md
+```
+
+---
+
+## 📸 Screenshots
+
+### Dashboard (Light & Dark)
+![Dashboard Light](./frontend/public/screenshots/dashboard-light.png)
+![Dashboard Dark](./frontend/public/screenshots/dashboard-dark.png)
+
+### Movies & Theaters
+![Movies](./frontend/public/screenshots/movies.png)
+![Theaters](./frontend/public/screenshots/theaters.png)
+![Movie Detail](./frontend/public/screenshots/movie-detail.png)
+
 
 ---
 
@@ -54,22 +90,3 @@ pip install -r requirements.txt
 (from repo root)
 npm run dev
 
----
-
-## Project Structure
-
-movie-app/
-  ├── backend/
-  │   ├── api/routers/      # FastAPI routers
-  │   ├── services/         # Business logic
-  │   ├── seeds/            # Seed data (movies, theaters, reviews)
-  │   └── main.py           # FastAPI entrypoint
-  ├── frontend/
-  │   ├── src/components/   # UI components
-  │   ├── src/home/         # Home + movie pages
-  │   ├── src/lib/          # API client
-  │   └── App.jsx
-  ├── package.json
-  └── README.md
-
-# Built by Francisco Alvarado
